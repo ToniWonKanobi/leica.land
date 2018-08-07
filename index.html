@@ -1,45 +1,22 @@
 <!DOCTYPE html>
-<html class="toni">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A website featuring images created on Leica cameras using Leica glass">
-    <title>LeicaLand</title>
-    <!-- include partials/_favicons-->
-    <!-- Open Graph and Twitter Cards-->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Anthony Craig">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Anthony Craig">
-    <meta property="article:author" content="https://www.facebook.com/toniwonkanobi">
-    <meta property="og:description" content="A website featuring images created on Leica cameras using Leica glass.">
-    <!-- meta(property="og:image" content="")-->
-    <meta name="twitter:site" content="@toniwonkanobi">
-    <meta name="twitter:creator" content="@toniwonkanobi">
-    <meta name="twitter:title" content="Anthony Craig">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="A website featuring images created on Leica cameras using Leica glass.">
-    <!-- meta(name="twitter:image" content="/img/anthonycraig.jpg")-->
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Analytics-->
-    <!-- include partials/_google-analytics-->
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">LeicaLand</a></h1>
-    </header>
+  <html>
+    <head>
+      <title>{{ page.title }}</title>
+      <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </head>
+    <body>
+      <nav>
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/blog">Blog</a></li>
+          </ul>
+      </nav>
+      <div class="container">
+        {{ content }}
+      </div><!-- /.container -->
+      <footer>
+      </footer>
+    </body>
+  </html>
     <main>
-      <div class="article"> 
-        <div class="post-date"><a href="#tetons">October 5, 2017</a></div>
-        <figure><a class="image-link" href="https://www.flickr.com/photos/toniwonkanobi/25849437837/in/album-72157689210286610/">
-<img src="https://farm5.staticflickr.com/4794/25849437837_482570f5c7_o.jpg" alt="Grand Tetons 28mm">
-</a>
-          <figcaption>Leica Q (Typ 116) | Summilux 28mm | ƒ/1.7 | 1/16000 | ISO 100 | -0.3 ev | VSCO a7</figcaption>
-        </figure>
-        <p>I probably could have stopped down for this picture, but since was from my early days of Leica interest, I thought I had to shoot everything wide open ;)</p>
-      </div>
-    </main>
-    <footer>&copy; Copyright 2018 <a href="http://anthonycraig.me">Anthony Craig</a></footer>
-  </body>
-</html>
