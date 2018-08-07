@@ -1,0 +1,64 @@
+@import url(/sass/reset.css)
+@import url(/sass/fonts.css)
+
+$DIN: "DIN 1451 LT W01 Mittelschrift"
+$dark: #272728
+$yellow: rgb(223,168,65)
+$lightergray: lighten($dark, 20%)
+$gray: gray
+
+*
+  transition: all 250ms ease-in-out
+
+body
+  font-family: $DIN
+  background: $dark
+  color: $yellow
+
+header
+  text-align: center
+  text-transform: uppercase
+  font-size: 10vw
+  padding: 1em
+
+img
+  max-width: 100%
+
+figcaption
+  padding: 0.5em
+  font-size: 90%
+  color: $gray
+
+  figure:hover &, figure:focus &
+    color: $yellow
+
+.post-date
+  text-align: center
+  padding: 1em
+
+p
+  line-height: 1.4
+  padding: 1em
+  max-width: 650px
+  margin: auto
+
+footer
+  text-align: center
+  padding: 1em
+
+a
+  text-decoration: none
+  color: inherit
+
+  &:hover, &:focus
+    background-color: $lightergray
+
+  header &
+    border-bottom: dotted $yellow 0.15em
+
+  footer &
+    border-bottom: none
+
+// Turns off background-color highlight when hovering on images
+.image-link:hover, .image-link:focus
+  background-color: inherit
