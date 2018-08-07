@@ -30,6 +30,45 @@
 		"oAP": "\/_layouts\/default.html",
 		"oF": 1
 		},
+	"\/_layouts\/post.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/_layouts\/post.html",
+		"oF": 1
+		},
+	"\/_posts\/2018-08-07-tetons.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/_posts\/2018-08-07-tetons.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 1,
+		"pHT": 1,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/blog\/atom.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/blog\/atom.xml",
+		"oF": 0
+		},
+	"\/blog\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/blog\/index.html",
+		"oF": 0
+		},
 	"\/build\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
