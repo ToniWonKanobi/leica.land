@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-  <html>
+  <html class="toni">
     <head>
       <title>{{ page.title }}</title>
       <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     <body>
-      <nav>
-          <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/about">About</a></li>
-          </ul>
-      </nav>
-      <div class="container">
+      <header>
+        <h1>
+          <a href="/">LeicaLand</a>
+        </h1>
+      </header>
+      <main>
         {{ content }}
-      </div><!-- /.container -->
+      </main>
+      <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
       <footer>
+        <p>&copy; Copyright 2018 <a href="http://anthonycraig.me">Anthony Craig</a></p>
       </footer>
     </body>
   </html>

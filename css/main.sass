@@ -21,16 +21,37 @@ header
   font-size: 10vw
   padding: 1em
 
+main, nav, footer
+  max-width: 650px
+  margin: auto
+
+main, nav
+  min-height: 10vw
+
 img
-  max-width: 100%
+  width: 100vw
+  margin-left: calc((100vw - 650px) / -2)
 
 figcaption
-  padding: 0.5em
+  padding: 1em
   font-size: 90%
   color: $gray
 
   figure:hover &, figure:focus &
     color: $yellow
+
+.post-title, .page-title
+  font-size: 300%
+  text-align: center
+
+.posts
+  padding: 1em
+  margin-left: 5em
+
+  li
+    padding: 1em 0.5em;
+    margin-left: 2em;
+    list-style-type: square;
 
 .post-date
   text-align: center
@@ -42,6 +63,13 @@ p
   max-width: 650px
   margin: auto
 
+nav
+  text-align: center
+
+  li
+    padding: 0.5em
+    text-transform: uppercase
+
 footer
   text-align: center
   padding: 1em
@@ -49,16 +77,14 @@ footer
 a
   text-decoration: none
   color: inherit
+  border-bottom: dotted $yellow 0.15em
 
   &:hover, &:focus
     background-color: $lightergray
 
-  header &
-    border-bottom: dotted $yellow 0.15em
+  figure &:hover, figure &:focus
+    background-color: inherit
 
-  footer &
+  nav &, footer &
     border-bottom: none
-
-// Turns off background-color highlight when hovering on images
-.image-link:hover, .image-link:focus
-  background-color: inherit
+  

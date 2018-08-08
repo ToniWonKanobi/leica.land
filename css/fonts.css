@@ -1,5 +1,5 @@
 @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=d1d6fdfc-e2c5-4c49-83fe-9b87fc2b6317&fontids=1491035");
 @font-face{
-    font-family:"DIN 1451 LT W01 Mittelschrift";
-    src:url("sass/fonts/1491035/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf") format("truetype");
+    font-family: "DIN 1451 LT W01 Mittelschrift";
+    src:url("/css/fonts/1491035/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf") format("truetype");
 }

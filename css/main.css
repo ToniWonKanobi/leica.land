@@ -48,7 +48,7 @@ table {
 
 @font-face {
   font-family: "DIN 1451 LT W01 Mittelschrift";
-  src: url("sass/fonts/1491035/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf") format("truetype"); }
+  src: url("/css/fonts/1491035/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf") format("truetype"); }
 
 * {
   -webkit-transition: all 250ms ease-in-out;
@@ -65,15 +65,35 @@ header {
   font-size: 10vw;
   padding: 1em; }
 
+main, nav, footer {
+  max-width: 650px;
+  margin: auto; }
+
+main, nav {
+  min-height: 10vw; }
+
 img {
-  max-width: 100%; }
+  width: 100vw;
+  margin-left: calc((100vw - 650px) / -2); }
 
 figcaption {
-  padding: 0.5em;
+  padding: 1em;
   font-size: 90%;
   color: gray; }
   figure:hover figcaption, figure:focus figcaption {
     color: #dfa841; }
+
+.post-title, .page-title {
+  font-size: 300%;
+  text-align: center; }
+
+.posts {
+  padding: 1em;
+  margin-left: 5em; }
+  .posts li {
+    padding: 1em 0.5em;
+    margin-left: 2em;
+    list-style-type: square; }
 
 .post-date {
   text-align: center;
@@ -85,20 +105,24 @@ p {
   max-width: 650px;
   margin: auto; }
 
+nav {
+  text-align: center; }
+  nav li {
+    padding: 0.5em;
+    text-transform: uppercase; }
+
 footer {
   text-align: center;
   padding: 1em; }
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  border-bottom: dotted #dfa841 0.15em; }
   a:hover, a:focus {
     background-color: #59595c; }
-  header a {
-    border-bottom: dotted #dfa841 0.15em; }
-  footer a {
+  figure a:hover, figure a:focus {
+    background-color: inherit; }
+  nav a, footer a {
     border-bottom: none; }
-
-.image-link:hover, .image-link:focus {
-  background-color: inherit; }
 /*# sourceMappingURL=main.css.map */
