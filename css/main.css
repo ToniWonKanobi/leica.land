@@ -54,42 +54,64 @@ table {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: dotted #dfa841 0.15em; }
+  a:hover, a:focus {
+    background-color: #59595c; }
+  figure a {
+    border-bottom: inherit; }
+  figure a:hover, figure a:focus {
+    background-color: inherit; }
+  .footnotes a {
+    border-bottom: none;
+    color: inherit; }
+  nav a, footer a {
+    border-bottom: none; }
+
 body {
   font-family: "DIN 1451 LT W01 Mittelschrift";
   background: #272728;
-  color: #dfa841; }
+  color: #dfa841;
+  font-size: 1.1em; }
 
 header {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 10vw;
-  padding: 1em; }
+  font-size: 8em;
+  min-height: 50vh; }
+  @media all and (max-width: 700px) {
+    header {
+      font-size: 15vw; } }
+
+header, nav, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 main, nav, footer {
+  padding: 1em; }
+
+header, main, nav, footer {
   max-width: 650px;
   margin: auto; }
 
-main, nav {
-  min-height: 10vw; }
-
-img {
-  width: 100vw;
-  margin-left: calc((100vw - 650px) / -2); }
-
-figcaption {
-  padding: 1em;
-  font-size: 90%;
-  color: gray; }
-  figure:hover figcaption, figure:focus figcaption {
-    color: #dfa841; }
-
 .post-title, .page-title {
-  font-size: 300%;
+  font-size: 300%; }
+
+.post-title {
+  text-align: center; }
+
+.homepage-title {
   text-align: center; }
 
 .posts {
-  padding: 1em;
-  margin-left: 5em; }
+  margin-left: 0.25em; }
   .posts li {
     padding: 1em 0.5em;
     margin-left: 2em;
@@ -99,14 +121,65 @@ figcaption {
   text-align: center;
   padding: 1em; }
 
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 2em;
+  margin: 1em auto; }
+
+h3 {
+  font-size: 1.5em;
+  margin: 0.75em auto; }
+
 p {
-  line-height: 1.4;
+  margin: 1em auto;
+  line-height: 1.5; }
+
+em::before, em::after {
+  content: '*'; }
+
+strong::before, strong::after {
+  content: '**'; }
+
+img {
+  width: 100vw;
+  margin-left: calc((100vw - 650px) / -2); }
+
+figcaption {
   padding: 1em;
-  max-width: 650px;
-  margin: auto; }
+  font-size: 80%;
+  color: gray; }
+  figure:hover figcaption, figure:focus figcaption {
+    color: #dfa841; }
+
+.footnote {
+  font-size: 20%;
+  vertical-align: super;
+  border-bottom: none;
+  background: #dfa841;
+  color: #272728;
+  border-radius: 1em;
+  padding: 0.15em 0.5em; }
+  .footnote:hover, .footnote:focus {
+    color: #dfa841; }
+
+.footnotes {
+  color: gray;
+  font-size: 90%;
+  margin-top: 5em;
+  border-top: 0.1em solid gray; }
+  .footnotes ol {
+    list-style-type: decimal;
+    margin-left: 2em; }
+
+pre, code {
+  font-family: Monaco, Menlo, Courier, monospace;
+  font-size: 70%; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  min-height: 25vh; }
   nav li {
     padding: 0.5em;
     text-transform: uppercase; }
@@ -115,14 +188,7 @@ footer {
   text-align: center;
   padding: 1em; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: dotted #dfa841 0.15em; }
-  a:hover, a:focus {
-    background-color: #59595c; }
-  figure a:hover, figure a:focus {
-    background-color: inherit; }
-  nav a, footer a {
-    border-bottom: none; }
+@media all and (max-width: 700px) {
+  header {
+    min-height: 100vh; } }
 /*# sourceMappingURL=main.css.map */

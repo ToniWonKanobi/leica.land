@@ -3,4 +3,5 @@ layout: default
 title: LeicaLand | Home
 ---
 
-<h2 class="page-title">🙋🏻‍♂️</h2>
+## 📷
+{:.page-title .homepage-title}
