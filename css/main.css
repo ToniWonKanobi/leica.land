@@ -106,7 +106,7 @@ main, nav, footer {
   padding: 2em; }
   @media all and (max-width: 700px) {
     main, nav, footer {
-      padding: 1em; } }
+      padding: 1.5em; } }
 
 main, nav, footer {
   max-width: 600px;
@@ -186,7 +186,7 @@ img {
   margin-left: calc((100vw - 600px) / -2); }
   @media all and (max-width: 700px) {
     img {
-      margin-left: calc((100vw - 2em) / -2); } }
+      margin-left: -2em; } }
 
 figcaption {
   padding: 1em;
