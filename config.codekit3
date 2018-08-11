@@ -117,36 +117,6 @@
 		"oAP": "\/_site\/css\/fonts\/1491035\/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf",
 		"oF": 0
 		},
-	"\/_site\/css\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_site\/css\/main-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/_site\/css\/main.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_site\/css\/main.css.map",
-		"oF": 0
-		},
-	"\/_site\/css\/main.sass": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/_site\/css\/main.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/_site\/css\/reset.css": {
 		"aP": 1,
 		"bl": 0,

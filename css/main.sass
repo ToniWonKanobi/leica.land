@@ -80,6 +80,7 @@ main
 
   @media all and (max-width: 700px)
     margin-top: initial
+    min-height: 75vh
 
 // Page/post content
 .post-title, .page-title
@@ -150,7 +151,8 @@ img
   margin-left: calc((100vw - 600px) / -2)
 
   @media all and (max-width: 700px)
-    margin-left: -2em
+    // Should always be = padding on the <main> element
+    margin-left: -1.5em
 
 figcaption
   padding: 1em

@@ -118,7 +118,8 @@ main {
   min-height: 50vh; }
   @media all and (max-width: 700px) {
     main {
-      margin-top: initial; } }
+      margin-top: initial;
+      min-height: 75vh; } }
 
 .post-title, .page-title {
   font-size: 3em; }
@@ -186,7 +187,7 @@ img {
   margin-left: calc((100vw - 600px) / -2); }
   @media all and (max-width: 700px) {
     img {
-      margin-left: -2em; } }
+      margin-left: -1.5em; } }
 
 figcaption {
   padding: 1em;
