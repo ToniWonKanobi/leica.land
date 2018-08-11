@@ -4,9 +4,14 @@ title: LeicaLand | Blog
 ---
 
 <h2 class="page-title">Blog</h2>
-        <!-- I'm not sure why I have to space it like this in the source, but it looks better when compiled -->
-        {% for post in site.posts %}
-          <ul class="posts">{{ post.date | date: "%A, %B %-d, %Y" }}
-            <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </li>
-          </ul>{% endfor %}
+{% for post in site.posts %}
+<ul class="posts">
+  <!-- Each day -->
+  <li class="day-in-posts">{{ post.date | date: "%A, %B %-d, %Y" }}
+    <ul>
+      <!-- Each post within a day -->
+      <li class="post-in-day"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    </ul>
+  </li>
+</ul>
+{% endfor %}

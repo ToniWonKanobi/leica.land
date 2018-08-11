@@ -30,6 +30,13 @@
 		"oAP": "\/_layouts\/default.html",
 		"oF": 1
 		},
+	"\/_layouts\/homepage.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_layouts\/homepage.html",
+		"oF": 0
+		},
 	"\/_layouts\/post.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -69,16 +76,6 @@
 		"oAP": "\/_site\/about.html",
 		"oF": 1
 		},
-	"\/_site\/assets\/css\/style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_site\/assets\/css\/style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/_site\/assets\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -108,17 +105,17 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/css\/fonts-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 0
 		},
 	"\/_site\/css\/fonts\/1491035\/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/css\/fonts\/1491035\/f0f4ad1c-8dc7-4c5b-ad22-325a24c41aac.ttf",
-		"oF": 1
+		"oF": 0
 		},
 	"\/_site\/css\/main.css": {
 		"aP": 1,
@@ -144,22 +141,9 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/css\/main.css",
-		"oF": 1,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/_site\/css\/media.sass": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/_site\/css\/media.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -168,9 +152,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/css\/reset-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 0
 		},
 	"\/_site\/feed.xml": {
@@ -190,9 +174,9 @@
 	"\/_site\/LICENSE": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/LICENSE",
-		"oF": 1
+		"oF": 0
 		},
 	"\/_site\/README.md": {
 		"cB": 0,
@@ -202,9 +186,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_site\/README.html",
-		"oF": 1,
+		"oF": 0,
 		"oFM": 0,
 		"oS": 1,
 		"pHT": 1,
@@ -295,19 +279,6 @@
 		"oA": 0,
 		"oAP": "\/css\/main.css",
 		"oF": 2,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/media.sass": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/media.css",
-		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},

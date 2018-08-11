@@ -4,6 +4,7 @@
 // Yes, this is the most old-school DIN that there is.
 $DIN: "DIN 1451 LT W01 Mittelschrift"
 $dark: #272728
+$notasdark: lighten(black, 20%)
 $yellow: rgb(223,168,65)
 $lightergray: lighten($dark, 20%)
 $gray: gray
@@ -34,6 +35,9 @@ a
   nav &, footer &
     border-bottom: none
 
+.hidden
+  display: none
+
 body
   font-family: $DIN
   background: $dark
@@ -42,10 +46,16 @@ body
 
 header
   font-size: 8em
-  min-height: 50vh
+  height: 50vh
+  box-sizing: border-box
+  border: 0.5em solid $yellow
 
   @media all and (max-width: 700px)
-    font-size: 15vw
+      font-size: 15vw
+
+  // body.homepage
+  .homepage &
+    height: 100vh
 
 // Makes everything centered
 header, nav, footer
@@ -54,15 +64,26 @@ header, nav, footer
   justify-content: center
 
 main, nav, footer
-  padding: 1em
+  padding: 2em
 
-header, main, nav, footer
-  max-width: 650px
+  @media all and (max-width: 700px)
+    padding: 1em
+
+main, nav, footer
+  max-width: 600px
   margin: auto
+
+main
+  background: lighten(black, 20%)
+  margin-top: 10em
+  min-height: 50vh
+
+  @media all and (max-width: 700px)
+    margin-top: initial
 
 // Page/post content
 .post-title, .page-title
-  font-size: 300%
+  font-size: 3em
 
 .post-title
   text-align: center
@@ -73,25 +94,46 @@ header, main, nav, footer
 .posts
   margin-left: 0.25em
 
-  li
-    padding: 1em 0.5em
-    margin-left: 2em
-    list-style-type: square
+.day-in-posts, .post-in-day
+  margin-left: 1em
+  padding: 1em 0.5em
+  list-style-type: square
 
 .post-date
   text-align: center
   padding: 1em
 
-h1, h2, h3, h4, h5
+.post
+  min-height: 125vh
+
+  @media all and (max-width: 700px)
+    min-height: 50vh
+
+h2, h3, h4, h5
   text-transform: uppercase
 
 h2
   font-size: 2em
   margin: 1em auto
 
+  .post &::before
+    content: '## '
+    font-size: 75%
+    letter-spacing: 0.1em
+
 h3
   font-size: 1.5em
   margin: 0.75em auto
+
+  .post &::before
+    content: '### '
+    font-size: 75%
+    letter-spacing: 0.2em
+
+.post h4::before
+  content: '#### '
+  font-size: 75%
+  letter-spacing: 0.2em
 
 p
   margin: 1em auto
@@ -105,7 +147,10 @@ strong::before, strong::after
 
 img
   width: 100vw
-  margin-left: calc((100vw - 650px) / -2)
+  margin-left: calc((100vw - 600px) / -2)
+
+  @media all and (max-width: 700px)
+    margin-left: calc((100vw - 2em) / -2)
 
 figcaption
   padding: 1em
@@ -147,14 +192,16 @@ pre, code
 
 nav
   text-align: center
-  min-height: 25vh
+  min-height: 50vh
+  font-size: 150%
 
   li
     padding: 0.5em
     text-transform: uppercase
 
+  @media all and (max-width: 700px)
+    min-height: 25vh
+
 footer
   text-align: center
   padding: 1em
-
-@import media.sass
